@@ -1,0 +1,84 @@
+@import "../../styles/_variables.css";
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem !important;
+  background-color: var(--clr-body-secondary) !important;
+  color: var(--clr-secondary);
+  font-size: var(--fs-medium);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-left-side .forum-link {
+  position: absolute;
+  left: 5%;
+}
+
+.logo {
+  font-weight: 900;
+}
+
+.list-container {
+  display: flex;
+}
+
+.link {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none !important;
+  padding: .5rem;
+  position: relative;
+  color: var(--clr-body-primary);
+}
+
+a:hover {
+  color: var(--clr-primary) !important;
+}
+
+a.active {
+  color: var(--clr-primary) !important;
+}
+
+a.active::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  bottom: -14%;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-primary);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  bottom: -13%;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-primary);
+  transform: scale(0);
+  transition: transform ease 500ms;
+}
+
+a:hover::after {
+  transform: scale(1);
+}
+
+@media (max-width: 1100px) {
+  .navbar-left-side .forum-link {
+    position: absolute;
+    left: 10%;
+  }
+}

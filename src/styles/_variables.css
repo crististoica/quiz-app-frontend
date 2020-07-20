@@ -1,0 +1,14 @@
+:root {
+  --clr-bg: #E8E9E9;
+  --clr-fg: #FBFFFE;
+  --clr-body-primary: #2C4251;
+  --clr-body-secondary: #FBFBFB;
+  --clr-contrast: #20A39E;
+  --clr-primary: #EF5B5B;
+  --clr-secondary: #083D77;
+  --fs-big: 1.5rem;
+  --fs-medium: 1.2rem;
+  --fs-small: 0.9rem;
+  /* --box-shadow: 0 0 20px 2px rgba(90, 90, 90, 0.65); */
+  --box-shadow: 0 0 20px 2px var(--clr-body-primary);
+}

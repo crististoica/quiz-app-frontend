@@ -1,0 +1,9 @@
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container h3 {
+  margin-right: 1rem;
+}

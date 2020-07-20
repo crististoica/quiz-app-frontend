@@ -1,0 +1,153 @@
+.loading {
+  text-align: center;
+  margin-top: 5rem;
+  color: #A9FFF7;
+}
+
+.individual-post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-question-container,
+.post-replies,
+.answer-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: var(--clr-body-secondary);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
+.individual-post-title {
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.post-info {
+  display: flex;
+  font-weight: 700;
+}
+
+.post-info>div {
+  display: flex;
+  align-items: center;
+  margin-right: .2rem;
+}
+
+.individual-post-question-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.question-text-container {
+  margin-left: .5rem;
+}
+
+.answer-container {
+  margin-bottom: 2rem;
+}
+
+.answer-container textarea {
+  width: 90%;
+  resize: none;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.answer-container button {
+  margin-top: .5rem;
+}
+
+.error-message,
+.no-replies {
+  margin: .5rem 0;
+  color: gray;
+}
+
+.post-replies {
+  padding: 1rem;
+}
+
+.post-replies-top {
+  font-weight: 700;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.post-reply {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.reply-top-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  padding: .5rem 0;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+
+.reply-top-info>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reply-top-info-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-top-info-date div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .2rem 0;
+}
+
+@media (max-width: 1400px) {
+  .individual-post-title {
+    align-self: flex-start;
+    flex-direction: column;
+    padding: 0 .5rem;
+  }
+  .post-info {
+    margin-top: 1rem;
+    padding-top: .5rem;
+    border-top: 1px solid #000;
+  }
+  .post-question-container,
+  .post-replies,
+  .answer-container {
+    width: 95%;
+    padding: .5rem;
+  }
+  .individual-post-question-container {
+    width: 95%;
+  }
+}
